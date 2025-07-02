@@ -52,7 +52,7 @@ def draw_pixel(x, y, color):
     fb_mem.write(struct.pack('I', color))
 
 def resolution():
-        print("Resolucion: ", screen_width, "x", screen_height)
+        print(screen_width, "x", screen_height)
 
 def close():
     global fb, fb_mem
