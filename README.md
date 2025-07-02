@@ -1,6 +1,6 @@
 # FrameDirect
 
-**FrameDirect** es una librería en Python para dibujar píxeles directamente en el framebuffer de Linux usando `mmap` y `pygame` para detectar la resolución de pantalla. Perfecta para proyectos que necesitan control directo del hardware gráfico sin depender de entornos gráficos como X11 o Wayland.
+**FrameDirect** es una librería en Python para dibujar píxeles directamente en el framebuffer de Linux usando `mmap`. Perfecta para proyectos que necesitan control directo del hardware gráfico sin depender de entornos gráficos como X11 o Wayland.
 
 
 ## Características
@@ -17,7 +17,6 @@
 
 - Linux con framebuffer habilitado y acceso a `/dev/fb0`
 - Python 3.6 o superior
-- Paquete `pygame`
 
 
 ## Instalación
@@ -33,18 +32,18 @@ O directamente desde GitHub:
 
 ```bash
 pip install git+https://github.com/gneval9/FrameDirect.git
-
 ```
 
 ## Uso básico
 
 ```python
-import FrameDirect
+import framedirect
 
-FrameDirect.init()
-FrameDirect.draw_pixel(100, 100, FrameDirect.RED)
-FrameDirect.close()
+framedirect.init()
+framedirect.resolution()
 
+framedirect.draw_pixel(100, 100, framedirect.RED)
+framedirect.close()
 ```
 
 ## Licencia
