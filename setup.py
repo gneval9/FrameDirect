@@ -12,6 +12,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     license='MIT',
+    url='https://github.com/gneval9/FrameDirect',
     packages=find_packages(),
     install_requires=[
         'pygame',
