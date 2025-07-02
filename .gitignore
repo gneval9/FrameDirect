@@ -1,0 +1,25 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales
+venv/
+env/
+
+# Archivos de configuración de IDEs
+.vscode/
+.idea/
+
+# Archivos temporales y logs
+*.log
+*.tmp
+
+# Paquetes instalados
+dist/
+build/
+*.egg-info/
+
+# Archivos específicos de sistema
+.DS_Store
+Thumbs.db
