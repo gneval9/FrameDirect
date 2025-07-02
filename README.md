@@ -32,7 +32,7 @@ pip install .
 O directamente desde GitHub:
 
 ```bash
-pip install git+https://github.com/tuusuario/FrameDirect.git
+pip install git+https://github.com/gneval9/FrameDirect.git
 
 ```
 
