@@ -32,7 +32,7 @@ pip install .
 O directamente desde GitHub:
 
 ```bash
-pip install git+https://github.com/tuusuario/FrameDirect.git
+pip install git+https://github.com/gneval9/FrameDirect.git
 
 ```
 
@@ -41,7 +41,7 @@ pip install git+https://github.com/tuusuario/FrameDirect.git
 ```python
 import FrameDirect
 
-FrameDirect.init_FD()
+FrameDirect.init()
 FrameDirect.draw_pixel(100, 100, FrameDirect.RED)
 FrameDirect.close()
 
