@@ -39,8 +39,6 @@ def init():
     screen_width, screen_height = info.current_w, info.current_h
     pygame.quit()
 
-    #print("Resolucion: ", screen_width, "x", screen_height)
-
     bits_per_pixel = 32
 
     fb_mem = mmap.mmap(fb, screen_width * screen_height * (bits_per_pixel // 8),
@@ -54,6 +52,8 @@ def draw_pixel(x, y, color):
     fb_mem.seek(offset)
     fb_mem.write(struct.pack('I', color))
 
+def resolution():
+        print("Resolucion: ", screen_width, "x", screen_height)
 
 def close():
     global fb, fb_mem
