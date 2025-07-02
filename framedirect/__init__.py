@@ -51,8 +51,34 @@ def draw_pixel(x, y, color):
     fb_mem.seek(offset)
     fb_mem.write(struct.pack('I', color))
 
+
+
+def draw_line(x1, y1, x2, y2):
+    dx = x2 - x1
+    dy = y2 - y1
+
+    steps = max(abs(dx), abs(dy))
+
+    if steps == 0:
+        framedirect.draw_pixel(x1, y1, framedirect.RED)
+        return
+
+    x_inc = dx / steps
+    y_inc = dy / steps
+
+    x = x1
+    y = y1
+
+    for _ in range(steps + 1):
+        framedirect.draw_pixel(round(x), round(y), framedirect.RED)
+        x += x_inc
+        y += y_inc
+
+
+
 def resolution():
         print(screen_width, "x", screen_height)
+
 
 def close():
     global fb, fb_mem
