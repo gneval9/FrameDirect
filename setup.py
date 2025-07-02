@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name='framedirect',
-    version='0.2.0',
+    version='0.3.0',
     author='gneval9 Software',
     author_email='gneval99@gmail.com',
     description='Una librería para dibujar pixeles usando el framebuffer en Python.',
