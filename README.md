@@ -43,6 +43,7 @@ framedirect.init()
 framedirect.resolution()
 
 framedirect.draw_pixel(100, 100, framedirect.RED)
+
 framedirect.close()
 ```
 
