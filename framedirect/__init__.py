@@ -5,10 +5,6 @@ import mmap
 import os
 import struct
 import warnings
-warnings.filterwarnings("ignore", category=UserWarning, module='pygame.pkgdata')
-
-os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = '1'
-import pygame
 
 
 RED     = 0xFFFF0000
@@ -34,10 +30,13 @@ def init():
     global fb, fb_mem, screen_width, screen_height, bits_per_pixel
     fb = os.open("/dev/fb0", os.O_RDWR)
 
-    pygame.init()
-    info = pygame.display.Info()
-    screen_width, screen_height = info.current_w, info.current_h
-    pygame.quit()
+    try:
+        with open("/sys/class/graphics/fb0/virtual_size", "r") as f:
+            res = f.read().strip()
+            screen_width, screen_height = map(int, res.split(","))
+    except Exception as e:
+        raise RuntimeError(f"No se pudo obtener la resolución del framebuffer: {e}")
+
 
     bits_per_pixel = 32
 
