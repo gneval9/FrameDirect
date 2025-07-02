@@ -39,12 +39,12 @@ pip install git+https://github.com/gneval9/FrameDirect.git
 ```python
 import framedirect
 
-framedirect.init()
-framedirect.resolution()
+framedirect.init()                                   # Inicializa el framebuffer
+framedirect.resolution()                             # Imprime la resolución de la pantalla
 
-framedirect.draw_pixel(100, 100, framedirect.RED)
+framedirect.draw_pixel(100, 100, framedirect.RED)    # Dibuja un píxel rojo en (100, 100)
 
-framedirect.close()
+framedirect.close()                                  # Cierra el framebuffer
 ```
 
 ## Licencia
