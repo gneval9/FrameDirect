@@ -30,7 +30,7 @@ screen_height = 0
 bits_per_pixel = 32
 
 
-def init_FD():
+def init():
     global fb, fb_mem, screen_width, screen_height, bits_per_pixel
     fb = os.open("/dev/fb0", os.O_RDWR)
 
@@ -49,7 +49,7 @@ def init_FD():
 
 def draw_pixel(x, y, color):
     if fb_mem is None:
-        raise RuntimeError("init_FD() no ha sido llamada o framebuffer cerrado.")
+        raise RuntimeError("init() no ha sido llamada o framebuffer cerrado.")
     offset = (y * screen_width + x) * 4
     fb_mem.seek(offset)
     fb_mem.write(struct.pack('I', color))
