@@ -60,7 +60,7 @@ def draw_line(x1, y1, x2, y2, color):
     steps = max(abs(dx), abs(dy))
 
     if steps == 0:
-        framedirect.draw_pixel(x1, y1, color)
+        draw_pixel(x1, y1, color)
         return
 
     x_inc = dx / steps
@@ -70,7 +70,7 @@ def draw_line(x1, y1, x2, y2, color):
     y = y1
 
     for _ in range(steps + 1):
-        framedirect.draw_pixel(round(x), round(y), color)
+        draw_pixel(round(x), round(y), color)
         x += x_inc
         y += y_inc
 
