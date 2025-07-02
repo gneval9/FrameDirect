@@ -8,7 +8,7 @@ setup(
     version='0.4.1',
     author='gneval9 Software',
     author_email='gneval99@gmail.com',
-    description='Una librería para dibujar pixeles usando el framebuffer en Python.',
+    description='Una librería para dibujar píxeles usando el framebuffer en Python.',
     long_description=long_description,
     long_description_content_type="text/markdown",
     license='MIT',
