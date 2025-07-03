@@ -10,7 +10,7 @@
 - Compatible con pantallas de 32 bits de color
 - Colores predefinidos para facilitar el uso
 - Colores en formato ARGB (en hexadecimal)
-- Simple, ligera y sin dependencias pesadas (solo `pygame`)
+- Simple, ligera y sin dependencias pesadas
 
 
 ## Requisitos
@@ -40,8 +40,8 @@ pip install git+https://github.com/gneval9/FrameDirect.git
 import framedirect
 
 framedirect.init()                                              # Inicializa el framebuffer
-framedirect.resolution()                                        # Imprime la resolución de la pantalla
-
+framedirect.resolution()                                        # Imprime la resolución de la pantalla (Variables: screen_width y screen_height)
+                                                                 
 framedirect.draw_pixel(100, 100, framedirect.RED)               # Dibuja un píxel rojo en (100, 100)
 framedirect.draw_line(200, 200, 300, 300, framedirect.GREEN)    # Dibuja una línea verde de (200, 200) a (300, 300)
 
