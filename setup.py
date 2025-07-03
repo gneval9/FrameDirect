@@ -14,9 +14,7 @@ setup(
     license='MIT',
     url='https://github.com/gneval9/FrameDirect',
     packages=find_packages(),
-    install_requires=[
-        'pygame',
-    ],
+    install_requires=[],
     python_requires='>=3.6',
     classifiers=[
         'Programming Language :: Python :: 3',
