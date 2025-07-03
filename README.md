@@ -55,5 +55,4 @@ MIT License
 
 ## Autor
 
-Hecho con amor por gneval9 Software <3
-Contacto: gneval99@gmail.com
+Hecho con amor por gneval9 Software <3        Contacto: gneval99@gmail.com
