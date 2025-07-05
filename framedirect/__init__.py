@@ -80,8 +80,7 @@ def draw_circle(cx, cy, radius, color):
         for x in range(cx - radius, cx + radius + 1):
             dist2 = (x - cx)**2 + (y - cy)**2
             if (radius - 1)**2 <= dist2 <= (radius + 1)**2:
-                framedirect.draw_pixel(x, y, color)
-
+                draw_pixel(x, y, color)
 
 
 
