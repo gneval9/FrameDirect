@@ -75,6 +75,15 @@ def draw_line(x1, y1, x2, y2, color):
         y += y_inc
 
 
+def draw_circle(cx, cy, radius, color):
+    for y in range(cy - radius, cy + radius + 1):
+        for x in range(cx - radius, cx + radius + 1):
+            dist2 = (x - cx)**2 + (y - cy)**2
+            if (radius - 1)**2 <= dist2 <= (radius + 1)**2:
+                framedirect.draw_pixel(x, y, color)
+
+
+
 
 def resolution():
         print(screen_width, "x", screen_height)
