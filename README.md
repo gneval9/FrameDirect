@@ -44,6 +44,7 @@ framedirect.resolution()                                        # Imprime la res
                                                                  
 framedirect.draw_pixel(100, 100, framedirect.RED)               # Dibuja un píxel rojo en (100, 100)
 framedirect.draw_line(200, 200, 300, 300, framedirect.GREEN)    # Dibuja una línea verde de (200, 200) a (300, 300)
+framedirect.draw_circle(400, 400, 50, 0xFF0000FF)               # Dibuja un circulo azul en (400, 400) con radio 50px
 
 framedirect.close()                                             # Cierra el framebuffer
 ```
