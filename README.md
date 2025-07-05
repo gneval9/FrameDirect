@@ -21,11 +21,9 @@
 
 ## Instalación
 
-Puedes instalar la librería localmente:
-
+Puedes instalar la libreria desde PyPi:
 ```bash
-pip install .
-
+pip install FrameDirect
 ```
 
 O directamente desde GitHub:
