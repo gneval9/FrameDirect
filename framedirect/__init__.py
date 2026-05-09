@@ -85,7 +85,7 @@ def draw_circle(cx, cy, radius, color):
 
 
 def resolution():
-        print(screen_width, "x", screen_height)
+        return(screen_width, screen_height)
 
 
 def close():
